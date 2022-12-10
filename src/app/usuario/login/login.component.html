@@ -1,0 +1,52 @@
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+  
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="home" class="nav-link px-2 text-secondary">Inicio</a></li>
+          <li><a href="/" class="nav-link px-2 text-white">Bebidas</a></li>
+          <li><a href="/" class="nav-link px-2 text-white">Snacks</a></li>
+          <li><a href="agregarproducto" class="nav-link px-2 text-white">Reservaciones</a></li>
+          <li><a href="actualizarproducto" class="nav-link px-2 text-white">Sobre Nosotros</a></li>
+        </ul>
+  
+        <div class="text-end">
+          <form [formGroup]="formulario">
+          <a href="login" type="button" class="btn btn-outline-light me-2">Iniciar Sesión</a>
+          <a href="registro" type="button" class="btn btn-warning">Registrarme</a>
+        </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<section class="form-register">
+
+  <h4>Formulario Login</h4>
+  <form [formGroup]="formulario">
+      <div >
+          <input class="controls" type="text" placeholder="Correo Electronico" formControlName="correo">
+      </div>
+      <div >
+          <input class="controls" type="password" placeholder="clave" formControlName="clave">
+      </div>
+      <div >
+        <a href="agregarproducto" type="button" class="botons">Iniciar Sesión</a>
+          <!-- <button class="botons" type="submit"  data-mdb-ripple-color="dark">Entrar</button> -->
+      </div>
+      <div >
+          <a href="registro" class="right-link">¿No tienes cuenta? Registrate aqui</a>
+      </div>
+  </form>
+
+
+    <!-- <h4>Iniciar Sesión</h4>
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Correo">
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Contraseña">
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="registro">¿No tienes cuenta? Dale clic aqui</a></p> -->
+</section>
